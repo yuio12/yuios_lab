@@ -1,0 +1,488 @@
+/*  */
+/* - my reset css kit */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; word-break: keep-all;
+  overflow-x: hidden;
+}
+body {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+ol::after, ul::after, dl::after {
+  content: ''; display: block; clear: both;
+}
+
+li::after {content: ''; display: block; clear: both;}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th, td {vertical-align: middle;}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input, select, textarea, button {
+	border: 0;
+  box-sizing: border-box;
+}
+textarea {resize: vertical;}
+
+input[type="checkbox"],
+input[type="radio"], select, button {
+  cursor: pointer;
+}
+input[type="checkbox"], input[type="radio"]{
+  width: 16px;
+  height: 16px;
+}
+
+/* :focus {outline: 2px solid #719ad7;} */
+
+
+::selection {
+	background-color: #fccccc;
+	color: rgb(111, 0, 255);
+}
+
+.text-hide {overflow: hidden; position: absolute; display: inline-block; border: 0; width: 1px; height: 1px; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); clip-path: inset(50%); z-index: -1;
+}
+
+
+/*  */
+
+.sheet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    max-width: 14000px;
+}
+
+
+
+/* style */
+/* .img_box {
+    width: 100%;
+    height: 60px;
+}
+.img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+} */
+
+/* category */
+/* .category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.category_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 30px;
+}
+
+.category_box_list {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px solid #eee;
+    font-size: 14px;
+}
+.category_box_list:first-child{
+    padding-left: 0; border-left: 0;
+}
+.category_box_list:last-child{
+    padding-right: 0;
+} */
+
+/* main */
+
+.main {
+    display: flex;
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+}
+/* header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color: #f6f8fc;
+    height: 80px;
+    max-width: 800px;
+}
+
+.header > h1 {
+    color: #033875;
+}
+
+.Sort {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.interval {
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+
+
+
+
+
+/* tab */
+
+
+
+.tab_menu {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    height: auto;
+    background-color: #f6f8fc;
+}
+
+.tab_box_list, .tab_box_list a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+    height: 56px;
+    background-color: transparent;
+    color: rgba(3, 56, 117, 0.8);
+    font-size: 16px;
+    font-weight: 400;
+}
+.tab_box_list, .tab_box_list a {
+  color: #668db9; font-weight: bold;
+}
+.tab_box_list a:focus {
+    color: #033875; 
+    opacity: 100%;
+    background-color: #fff;
+}
+
+
+/* user_interface */
+
+/* .user_interface {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 390px;
+    height: 55px;
+}
+
+.user_interface_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.user_interface_box_list {
+  font-size: 12px;
+  margin-left: 30px;
+}
+.user_interface_box_list:first-child{
+  margin-left: 0;
+}
+
+.user_interface_box_atag {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} */
+
+
+/* product */
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 30px;
+}
+
+.product_frame{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 24px;
+    margin: 0;
+}
+
+.on{display: flex;}
+
+/* .product_banner {
+    height: 60px;
+    width: 256px;
+    margin-top: 26px;
+    margin-bottom: 45px;
+}
+
+.product_title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    margin-right: auto;
+    margin-bottom: 8px;
+}
+
+.product_box{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product_box_list, .second_product_box_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 12px;
+    margin-bottom: 15px;
+}
+.second_product_box_list img{
+  border-radius: 5px;
+}
+
+.product_box_list:first-child{
+    margin-left: 0;
+}
+.product_box_list:nth-child(4n){
+    margin-left: 0;
+}
+
+.second_product_box_list:first-child{
+  margin-left: 0;
+}
+.second_product_box_list:nth-child(2n + 1){
+  margin-left: 0;
+} */
+
+
+
+
+.product_atag {
+  font-size: 13px;
+  width: 70px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+.second_product_atag {
+  font-size: 13px;
+  width: 110px;
+  height: 94px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+
+
+/* product_event */
+
+
+.product_event {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+.product_event_atag {
+  width: 234px;
+  height: 90px;
+}
+
+/* switch */
+
+.living_room {
+    width: 400px;
+    height: auto;
+}
+
+.living_room > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 400px;
+    height: auto;
+}
+
+
+.living_room_check {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #fff;
+    width: 180px;
+    height: 180px;
+    box-shadow: 3px 3px 3px 3px gray;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+input[type="checkbox"]:checked + label {
+    background-color: rgb(173, 213, 250);
+    box-shadow: 3px 3px 3px 3px gray inset;
+}
+
+input:checked + label > .switch {
+    background-color: rgb(90, 90, 247);
+    border-color: rgb(90, 90, 247);
+}
+input:checked + label > .switch::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: #fff;
+    transition: left 250ms linear;
+    left: 1em;
+}
+
+input {
+    display: none;
+   position: absolute;
+   top: 50px;
+   left: 50px;
+   z-index: 1;
+}
+
+.switch {
+    margin-top: 10px;
+    margin-left: 100px;
+    appearance: none;
+    position: relative;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 1.25em;
+    width: 2.2em;
+    height: 1.3em;
+}
+
+.switch::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    transform: scale(0.8);
+    background-color: gray;
+    transition: left 250ms linear;
+}
+
+
+/*  */
+
+div > img {
+    width: 300px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .living_room > ul {
+        flex-direction: column;
+    }
+}
