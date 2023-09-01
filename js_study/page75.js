@@ -8,7 +8,7 @@ let sum_val = 0;
 
 let i = 1;
 
-while (i < 5){
+while (i <= 5){
     sum_val = sum_val + i;
     i++;
 }
