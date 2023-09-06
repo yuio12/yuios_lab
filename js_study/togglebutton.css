@@ -1,0 +1,24 @@
+
+.button_box {
+    position: relative;
+}
+
+.btn_off {
+    position: absolute;
+    
+}
+
+.btn_on {
+    position: absolute;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
