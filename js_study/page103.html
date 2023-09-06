@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./page103function.js"></script>
+    <style>
+        #canvas-wrap {
+            position: relative;
+        }
+        canvas {
+            border: 1px solid black;
+        }
+        #c1 {
+            position: absolute; top: 0; left: 0;
+            background-color: white;
+            z-index: 1;
+        }
+        #c2 {
+            position: absolute; top: 0; left: 0;
+            background-color: white;
+            z-index: 2;
+        }
+        .btn_box {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-wrap">
+        <canvas id="c1" width="400px" height="300px"></canvas>
+        <canvas id="c2" width="400px" height="300px"></canvas>
+    </div>
+    <div class="btn_box">
+        <button onclick="btn1()">화면1</button>
+        <button onclick="btn2()">화면2</button>
+    </div>
+
+    
+</body>
+</html>
