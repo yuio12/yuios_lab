@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>디자인 패턴(design pattern) : 설계 패턴</h2>
+    <p>디자인 - 시각적 배치/효과</p>
+    <p>디자인 - 설계</p>
+    <div>
+        <p>GoF 패턴(자바)</p>
+        <div>
+            <h1>생성 패턴</h1>
+                <h2>Constructor</h2>
+                <h2>Factory</h2>
+                <p>객체를 만들 때 생성을 담당하는 객체를 별도로 둔다</p>
+                <script>
+                    class Sonata{
+                        constructor(){}
+                        whoareyou(){console.log("난 소나타");}
+                    }
+                    class K5{
+                        constructor(){}
+                        whoareyou(){console.log("난 K5");}
+                    }
+                    // direct 생성
+                    let myCar1 = new Sonata();
+                    myCar1.whoareyou();
+                    let myCar2 = new K5();
+                    myCar2.whoareyou();
+
+                    class CarFactory{
+                        constructor(){}
+                        make(car_name){
+                            switch(car_name){
+                                case 'sonata':
+                                    return new Sonata();
+                                case 'k5':
+                                    return new K5();
+                                default:
+                                    return false;
+                            }
+                        }
+                    }
+                    const KR_CarFactory = new CarFactory();
+                    let my_Car1 = KR_CarFactory.make('sonata');
+                    let my_Car2 = KR_CarFactory.make('k5');
+                    my_Car1.whoareyou();
+                    my_Car2.whoareyou();
+                </script>
+                <h2>Abstract Factory</h2>
+                <h2>Prototype</h2>
+                <p>템플릿 기반, clone(상속)</p>
+                <script>
+                    class Car_proto{
+                        constructor(wheels){
+                            this.no_of_wheels = wheels;
+                        }
+                        start(){ return `start ${this.no_of_wheels}` }
+                        stop(){ return `stop ${this.no_of_wheels}` }
+                    }
+                    const car_proto = new Car_proto(4);
+                    const car_proto1 = Object.create(car_proto, {owner:{value:"Oh Dong"}});
+                    const car_proto2 = Object.create(car_proto, {owner:{value:"Oh Dongs"}});
+                </script>
+                <h2>Singleton</h2>
+                <p>하나의 객체를 만든다</p>
+                <script>
+                    class Car {
+                        constructor(wheels){
+                            this.wheels = wheels;
+                        }
+                        setwheels(){
+                            this.wheels = wheels;
+                        }
+                    }
+                    const Singleton = {
+                        instance : null,
+                        getInstance(parameter){
+                            if(!this.instance){ this.instance = new Car(parameter)};
+                            return this.instance;
+                        }
+                    }
+                    let car_sedan_new = new Car(4);
+                    let car_3w_autobicycle_new = new Car(3);
+                    let car_2w_autobicycle_new = new Car(2);
+                    
+                    console.log(car_sedan_new.wheels, 
+                                car_3w_autobicycle_new.wheels, 
+                                car_2w_autobicycle_new.wheels);
+                    
+                    let car_sedan = Singleton.getInstance(4);
+                    let car_3w_autobicycle = Singleton.getInstance(3);
+                    let car_2w_autobicycle = Singleton.getInstance(2);
+
+                    console.log(car_sedan.wheels, 
+                                car_3w_autobicycle.wheels, 
+                                car_2w_autobicycle.wheels);
+                </script>
+                <h2>Builder</h2>
+            <h1>구조 패턴</h1>
+                <h2>Adapter</h2>
+                <h2>Bridge</h2>
+                <h2>Cpmopsite</h2>
+                <h2>Decorator</h2>
+                <h2>Facade</h2>
+                <h2>Flyweight</h2>
+                <h2>Proxy</h2>
+            <h1>행동 패턴</h1>
+                <h2>Chain of Responsibility</h2>
+                <h2>Command</h2>
+                <h2>Iterator</h2>
+                <h2>Mediator</h2>
+                <h2>Memento</h2>
+                <h2>Observer</h2>
+                <h2>State</h2>
+                <h2>Strategy</h2>
+                <h2>Template method</h2>
+                <h2>visitor</h2>
+        </div>
+    </div>
+    <p>JS 프로토타입</p>
+</body>
+</html>
