@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr><td colspan="2">1</td><td>7</td></tr>
+        <tr><td rowspan="2">2</td><td>5</td><td>8</td></tr>
+        <tr><td>6</td><td>9</td></tr>
+    </table>
+
+    <table>
+        <tr style="height: 50px;"><td colspan="4"></td></tr>
+        <tr style="height: 150px;"><td>메뉴</td><td colspan="3">내용</td></tr>
+        <tr style="height: 50px;"><td colspan="4"></td></tr>
+    </table>
+
+    <object data="./img/다운로드.jpg" type=""></object>
+    <!-- <embed src="./img/spring.mp3" type=""> -->
+    <audio src="./img/spring.mp3" controls></audio>
+    <video src="./img/salad.mp4" controls width="300"></video>
+
+    <a href="https://www.naver.com/" target="_blank">naver</a>
+    <p id="name">뉴진스</p>
+    <p id="name2">뉴진스</p>
+    <button onclick="change_text()">바꿔 </button>
+    <script>
+        const change_text = ()=>{
+            document.getElementById("name").innerHTML = "newjeans";
+        }
+    </script>
+    <button onclick="change_text2()">바꿔 </button>
+    <script>
+        const change_text2 = ()=>{
+            document.getElementById("name2").innerHTML = "newjeans";
+        }
+    </script>
+
+</body>
+</html>

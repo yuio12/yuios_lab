@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let val = 0;
+        for (let h = 1; h < 11; h++) {
+            for (let y = 1; y < 11; y++) {
+                t = h + y -1
+                val += t
+                document.write(t + " ");
+            }
+            document.write("<br>");
+        }
+        document.write(val);
+
+
+        document.write("<br>")
+        let s = 0;
+        for(let i = 1; i < 101; i++){
+            let i1 = parseInt((i/1)%10); //
+            let i10 = parseInt((i/10)%10);
+            let i100 = parseInt((i/100)%10);
+            let num = i1 + i10 + i100;
+            s += num;
+        }
+        document.write(s);
+
+
+        val = 682
+        num = 0
+        while (true){
+          if (val%2 == 0){
+            val /= 2
+          }
+          else{
+            val = (val*3+1)/2
+          }
+          num += 1
+
+          if (val == 1){
+            document.write(num)
+            break
+          }
+        }
+
+        conut = 0
+        height = 0
+        while (true){
+          height += 3;
+          if (height > 19.4){
+            break;}
+          height -= 2;
+          conut += 1;
+        }
+        document.write(conut);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+
+
+
+.con {
+    width: 1200px;
+    margin: 20px auto;
+    background-color: aquamarine;
+}
+
+.header {
+    width: 100%;
+    background-color: bisque;
+    height: 100px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+    clear: both;
+}
+
+.side {
+    float: left;
+    background-color: aqua;
+    height: 400px;
+    width: 200px;
+}
+
+.main {
+    float: left;
+    background-color: azure;
+    width: 1000px;
+    height: 400px;
+}
+
+
+/*  */
+
+
+.test_static {
+    margin: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
+    position: static;
+}
+
+.container_static, .container_relative, .container_absolute {
+    background-color: bisque;
+}
+.container_absolute {
+    position: relative;
+    background-image: url('./img/다운로드.jpg');
+    width: 400px;
+    height: 200px;
+}
+
+.test_relative {
+    margin: 5px;
+    padding: 5px;
+    background-color: antiquewhite;
+    position: relative;
+}
+.test {
+    top: 5px;
+    left: 5px;
+}
+
+
+.container_fixed {
+    background-color: aqua;
+}
+
+.test_fixed {
+    margin: 5px;
+    padding: 5px;
+    background-color: brown;
+    position: fixed;
+    width: 100%;
+    left: 10px; top: 10px
+}
+
+.test_absolute {
+    margin: 5px;
+    padding: 5px;
+    background-color: blueviolet;
+    position: absolute;
+    left: 0; top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
